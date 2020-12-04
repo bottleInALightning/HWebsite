@@ -18,6 +18,6 @@ from django.urls import path,include
 import website
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('hidden-admin-site-not-findable/', admin.site.urls),
     path("site/",include("website.urls")),
 ]

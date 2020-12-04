@@ -1,40 +1,20 @@
-<!doctype html>
+{% extends 'website/base.html' %}
 
-<html lang="en">
-<head>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'website/dummy_css.css' %}">    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-    <meta charset="utf-8">
-
-    <title>HWebsite</title>
-    <meta name="description" content="Website to share homework lists">
-    <meta name="author" content="Lars">
-    
-</head>
-
-<body>
-    
+{% block content%}
     <div class="container-fluid">
         <div class="row-md">
             <h2 class="display-1">Temporary Homepage</h2>
         </div>
         <div class="row">
             <p class="col" style="white-space:pre-line;">Always being up to date and not having to struggle with writing 
-            everything down on paper! 
-        Join now!</p>
+            everything down on paper!</p>
+        
         </div>
         <div class="row-md">
-            
-          
-            
-        
+            <a href="create_room" class="btn btn-primary">Join</a>
+        </div>
     </div>
-</body>
-</html>
+    
+        
+      
+{% endblock %}
